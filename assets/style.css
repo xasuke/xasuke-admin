@@ -3,18 +3,42 @@
 }
 .x-sidebar {
 	width: 250px;
-	height: 100vh;
+}
+.x-sidebar .x-list{
+	background-color: #212529;
+	color: grey;
+}
+.x-sidebar .x-list:hover{
+	background-color: #0d6efd;
+	color: white;
 }
 .x-menu{
 	display: flex;
+	font-size: small;
+	padding-bottom: 5px;
+	padding-top: 5px
 }
-.x-icon{
+.x-menu .x-icon{
 	width: 30px;
 }
-@media screen and (max-width: 768px){
-	.x-sidebar{
-		display: none;
-	}
+.x-menu .x-title{
+	flex: 1;
+}
+#main{
+	min-height: 100vh
+}
+.x-notif img{
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 40px;
+	margin-right: 10px;
+}
+.x-notif-menu{
+	right: 0;
+	position: absolute;
+	width: 200px;
+	display: none;
 }
 .x-main{
 	flex: 1;
